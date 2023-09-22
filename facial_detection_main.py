@@ -113,8 +113,7 @@ def PreProcess(image: Image, CannyLowThres: int = 25, CannyHighThres: int = 80) 
 
 def DetectFaceRect(image: Image, smooths: int = 1, diff_thres: int = 5, chin_padding: float = 0.1, 
                    min_width_thres: float = 0.25, print_output: bool = False) -> List[Tuple[int,int]]:
-    """ ######## ADD DESCRIPTION ###########
-    
+    """ 
     Assumptions:
     * image is binary with values either 0 or 1
     * image is edge detection image
@@ -230,8 +229,7 @@ def DetectFaceRect(image: Image, smooths: int = 1, diff_thres: int = 5, chin_pad
 
 
 def HaarLikeFeature(feature: np.array, rect: List[Tuple[int, int]], fr_int: Image) -> float:
-    """ ######## ADD DESCRIPTION ###########
-    
+    """ 
     :feature: Haar-like feature to be used in evaluation
     :rect   : Size of Haar-like feature
     :fr_int : Integral image of image being evaluated
